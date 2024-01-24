@@ -45,7 +45,7 @@ const pVariants = {
 export default function Intro({ pageId }: { pageId: number }) {
   const [animateValue, setAnimateValue] = useState<string>("null");
   return (
-    <motion.div
+    <motion.main
       initial={{ y: "-100vh" }}
       animate={{ y: "0vh" }}
       exit={{ y: "-100vh" }}
@@ -85,6 +85,6 @@ export default function Intro({ pageId }: { pageId: number }) {
           geliştiriyorum.
         </p>
       </motion.div>
-    </motion.div>
+    </motion.main>
   );
 }
