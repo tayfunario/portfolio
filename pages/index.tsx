@@ -11,6 +11,11 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener("wheel", handleScroll, { passive: false });
 
+    const stackContainer = document.getElementById("stack-container");
+    stackContainer?.addEventListener("wheel", (e) => {
+      e.stopPropagation();
+    });
+
     return () => window.removeEventListener("wheel", handleScroll);
   }, [isLocked]);
 

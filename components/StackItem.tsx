@@ -34,7 +34,7 @@ export default function Item({
             exit={{ scale: 0 }}
             className="absolute bottom-[135px] right-[-7px] w-28 text-xs font-semibold text-gray-700 bg-gray-100 p-1 rounded-lg"
           >
-            Öğreniyorum
+            Öğrenmekteyim
           </motion.div>
         )}
       </AnimatePresence>

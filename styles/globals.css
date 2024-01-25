@@ -10,3 +10,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#stack-container::-webkit-scrollbar {
+  width: 10px; /* Scrollbar genişliği */
+}
+
+#stack-container::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded-lg
+}
+
+#stack-container::-webkit-scrollbar-track {
+  @apply bg-gray-800
+}

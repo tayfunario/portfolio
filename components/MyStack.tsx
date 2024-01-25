@@ -14,7 +14,7 @@ export default function MyStack({ pageId }: { pageId: number }) {
         <h2 className="text-xl font-semibold p-2">Bildiklerim</h2>
       </motion.div>
 
-      <motion.div className="h-max overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 mt-3 p-5">
+      <motion.div id="stack-container" className="h-72 overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 mt-3 p-5">
         <StackItem
           id={0}
           name="HTML"
