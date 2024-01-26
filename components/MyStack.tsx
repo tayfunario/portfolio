@@ -11,7 +11,7 @@ export default function MyStack({ pageId }: { pageId: number }) {
       className="h-screen flex flex-col pt-2"
     >
       <motion.div className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl">
-        <h2 className="text-xl font-semibold p-2">Bildiklerim</h2>
+        <h2 className="second-title p-2">Bildiklerim</h2>
       </motion.div>
 
       <motion.div id="stack-container" className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5">

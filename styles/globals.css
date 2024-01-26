@@ -11,14 +11,42 @@
   box-sizing: border-box;
 }
 
+.main-title {
+  @apply text-4xl font-black;
+}
+
+.second-title {
+  @apply text-xl font-semibold;
+}
+
+.infobox-text {
+  @apply text-xs font-semibold;
+}
+
+.stack-text {
+  @apply font-semibold text-sm;
+}
+
+.project-title {
+  @apply font-bold text-lg;
+}
+
+.project-description {
+  @apply text-sm;
+}
+
+.project-btn {
+  @apply text-sm font-semibold;
+}
+
 #stack-container::-webkit-scrollbar {
   width: 8px; /* Scrollbar genişliği */
 }
 
 #stack-container::-webkit-scrollbar-thumb {
-  @apply bg-gray-500
+  @apply bg-gray-500;
 }
 
 #stack-container::-webkit-scrollbar-track {
-  @apply bg-gray-800
+  @apply bg-gray-800;
 }

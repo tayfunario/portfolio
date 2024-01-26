@@ -68,7 +68,7 @@ export default function Intro({ pageId }: { pageId: number }) {
         animate={animateValue}
         className="col-span-2 bg-white self-end rounded-2xl"
       >
-        <h1 className="text-4xl font-black py-5 px-3">Merhaba!</h1>
+        <h1 className="main-title py-5 px-3">Merhaba!</h1>
       </motion.div>
 
       <motion.div
@@ -77,7 +77,7 @@ export default function Intro({ pageId }: { pageId: number }) {
         animate={animateValue}
         className="bg-white self-start col-span-3 rounded-2xl"
       >
-        <p className="p-3">
+        <p className="copy-1 p-3">
           Ben Tayfun. Junior seviye{" "}
           <span className="text-gradient-end font-black">Full-stack</span>{" "}
           geliştiriciyim. Aslında lisedeyken Java ve C# ile programlama yapıyordum fakat artık

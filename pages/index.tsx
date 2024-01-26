@@ -1,6 +1,7 @@
 import Intro from "@/components/Intro";
 import Layout from "@/components/Layout";
 import MyStack from "@/components/MyStack";
+import Projects from "@/components/Projects";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -42,11 +43,12 @@ export default function Home() {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        {currentPageId === 1 ? (
+        {/* {currentPageId === 1 ? (
           <Intro key={0} pageId={currentPageId} />
         ) : (
           <MyStack key={1} pageId={currentPageId} />
-        )}
+        )} */}
+        <Projects />
       </AnimatePresence>
     </Layout>
   );
