@@ -12,11 +12,11 @@
 }
 
 #stack-container::-webkit-scrollbar {
-  width: 10px; /* Scrollbar genişliği */
+  width: 8px; /* Scrollbar genişliği */
 }
 
 #stack-container::-webkit-scrollbar-thumb {
-  @apply bg-gray-500 rounded-lg
+  @apply bg-gray-500
 }
 
 #stack-container::-webkit-scrollbar-track {
