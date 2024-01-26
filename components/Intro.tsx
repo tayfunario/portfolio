@@ -77,11 +77,11 @@ export default function Intro({ pageId }: { pageId: number }) {
         animate={animateValue}
         className="bg-white self-start col-span-3 rounded-2xl"
       >
-        <p className="text-lg p-3">
+        <p className="p-3">
           Ben Tayfun. Junior seviye{" "}
-          <span className="text-blue-600 font-black">Full-stack</span>{" "}
-          geliştiriciyim. Aslında eskiden Java ve C# kullanıyordum fakat artık
-          tamamen Javascript/Typescript ile ilgileniyorum ve web uygulamaları
+          <span className="text-gradient-end font-black">Full-stack</span>{" "}
+          geliştiriciyim. Aslında lisedeyken Java ve C# ile programlama yapıyordum fakat artık
+          tamamen Javascript ve Typescript ile ilgileniyorum ve web uygulamaları
           geliştiriyorum.
         </p>
       </motion.div>

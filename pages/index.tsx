@@ -19,9 +19,9 @@ export default function Home() {
     return () => window.removeEventListener("wheel", handleScroll);
   }, [isLocked]);
 
-  const handleScroll = (e: any) => {
+  const handleScroll = (e: WheelEvent) => {
     if (isLocked) {
-      e.preventDefault();
+      e.stopPropagation();
     } else {
       if (e.deltaY > 0) {
         setCurrentPageId(2);

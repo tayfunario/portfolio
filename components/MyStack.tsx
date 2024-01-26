@@ -8,13 +8,13 @@ export default function MyStack({ pageId }: { pageId: number }) {
       animate={{ y: "0vh" }}
       exit={{ y: "100vh" }}
       transition={{ duration: 1 }}
-      className="h-screen pt-2"
+      className="h-screen flex flex-col pt-2"
     >
-      <motion.div className="col-span-2 bg-white bg-opacity-90 self-end rounded-2xl">
+      <motion.div className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl">
         <h2 className="text-xl font-semibold p-2">Bildiklerim</h2>
       </motion.div>
 
-      <motion.div id="stack-container" className="h-72 overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 mt-3 p-5">
+      <motion.div id="stack-container" className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5">
         <StackItem
           id={0}
           name="HTML"
@@ -111,13 +111,27 @@ export default function MyStack({ pageId }: { pageId: number }) {
           name="JSON Web Token"
           src="jwt"
           alt="json web token"
-          currentlyBeingLearned={true}
+          currentlyBeingLearned={false}
         />
         <StackItem
           id={14}
           name="GraphQL"
           src="graphql"
           alt="graphql"
+          currentlyBeingLearned={true}
+        />
+        <StackItem
+          id={15}
+          name="Nest.js"
+          src="nestjs"
+          alt="nest.js"
+          currentlyBeingLearned={true}
+        />
+        <StackItem
+          id={16}
+          name="Design Patterns"
+          src="pattern"
+          alt="design patterns"
           currentlyBeingLearned={true}
         />
       </motion.div>
