@@ -11,12 +11,30 @@ export default function Projects() {
 
       <motion.div
         id="stack-container"
-        className="grow overflow-auto gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5"
+        className="grow flex flex-col gap-y-8 overflow-auto rounded-2xl bg-black bg-opacity-40 my-3 p-5"
       >
         <ProjectItem
           title="Product Feedback App"
           description="Yapılan ürünlerin geri bildirimlerini toplayan bir uygulama."
           image="product_feedback"
+        />
+
+        <ProjectItem
+          title="Invoice App"
+          description="Faturaların kaydedildiği ve düzenlendiği bir uygulama."
+          image="invoice"
+        />
+
+        <ProjectItem
+          title="Link Sharing App"
+          description="Sosyal medya hesaplarının linklerinin paylaşıldığı bir uygulama."
+          image="link_sharing"
+        />
+
+        <ProjectItem
+          title="Grostore"
+          description="Gelişmiş bir alışveriş uygulaması."
+          image="grostore"
         />
       </motion.div>
     </motion.section>

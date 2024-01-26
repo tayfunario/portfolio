@@ -28,7 +28,7 @@
 }
 
 .project-title {
-  @apply font-bold text-lg;
+  @apply font-black text-lg;
 }
 
 .project-description {
