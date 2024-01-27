@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <motion.section className="h-screen flex flex-col pt-2">
       <motion.div className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl">
-        <h2 className="text-xl font-semibold p-2">Projelerim</h2>
+        <h2 className="second-title p-2">Projelerim</h2>
       </motion.div>
 
       <motion.div

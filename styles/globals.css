@@ -12,11 +12,15 @@
 }
 
 .main-title {
-  @apply text-4xl font-black;
+  @apply text-4xl font-black text-cyan-700;
 }
 
 .second-title {
-  @apply text-xl font-semibold;
+  @apply text-xl font-semibold text-cyan-900;
+}
+
+.third-title {
+  @apply font-semibold text-cyan-700;
 }
 
 .infobox-text {
@@ -49,4 +53,12 @@
 
 #stack-container::-webkit-scrollbar-track {
   @apply bg-gray-800;
+}
+
+.text-container {
+  @apply bg-white rounded-2xl text-cyan-800;
+}
+
+.stack-ul-li {
+  @apply text-cyan-800 bg-cyan-50 p-1 rounded-lg text-sm font-semibold;
 }

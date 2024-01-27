@@ -72,6 +72,13 @@ export default function MyStack({ pageId }: { pageId: number }) {
           currentlyBeingLearned={false}
         />
         <StackItem
+          id={18}
+          name="Git"
+          src="git"
+          alt="git"
+          currentlyBeingLearned={false}
+        />
+        <StackItem
           id={17}
           name="Firebase"
           src="firebase"
