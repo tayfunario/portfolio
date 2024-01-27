@@ -1,3 +1,4 @@
+import { TiTick } from "react-icons/ti";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDoubleRight } from "react-icons/fa";
@@ -6,15 +7,24 @@ type ProjectItemProps = {
   title: string;
   description: string;
   image: string;
+  isTested: boolean;
 };
 
 export default function ProjectItem({
   title,
   description,
   image,
+  isTested,
 }: ProjectItemProps) {
   return (
-    <div className="flex flex-col text-start p-3 bg-black bg-opacity-30 rounded-2xl">
+    <div className="relative flex flex-col text-start p-3 bg-black bg-opacity-30 rounded-2xl">
+      {isTested && (
+        <div className="absolute top-5 right-0 flex justify-between items-center w-36 project-btn py-1 px-3 text-gray-200 bg-emerald-800 rounded-md">
+          <span>E2E Test Edildi</span>
+          <TiTick className="size-5 text-green-400" />
+        </div>
+      )}
+
       <Image
         src={`/screenshots/${image}.png`}
         className="rounded-lg"
@@ -29,7 +39,9 @@ export default function ProjectItem({
         href={`/projects/${image}`}
         className="project-btn self-end flex justify-around items-center w-36 text-gray-200 bg-black bg-opacity-20 mt-2 px-2 py-1 rounded-2xl"
       >
-        <span className="mr-px hover:underline underline-offset-2">Projeyi İncele</span>
+        <span className="mr-px hover:underline underline-offset-2">
+          Projeyi İncele
+        </span>
         <FaAngleDoubleRight className="rounded-full bg-black bg-opacity-30 p-1 size-6" />
       </Link>
     </div>

@@ -17,24 +17,28 @@ export default function Projects() {
           title="Product Feedback App"
           description="Yapılan ürünlerin geri bildirimlerini toplayan bir uygulama."
           image="product_feedback"
+          isTested={true}
         />
 
         <ProjectItem
           title="Invoice App"
           description="Faturaların kaydedildiği ve düzenlendiği bir uygulama."
           image="invoice"
+          isTested={true}
         />
 
         <ProjectItem
           title="Link Sharing App"
           description="Sosyal medya hesaplarının linklerinin paylaşıldığı bir uygulama."
           image="link_sharing"
+          isTested={true}
         />
 
         <ProjectItem
           title="Grostore"
           description="Gelişmiş bir alışveriş uygulaması."
           image="grostore"
+          isTested={false}
         />
       </motion.div>
     </motion.section>

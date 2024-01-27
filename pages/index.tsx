@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener("wheel", handleScroll, { passive: false });
-    
+
     // Prevent scrolling on stack container
     const stackContainer = document.getElementById("stack-container");
     stackContainer?.addEventListener("wheel", (e) => {
