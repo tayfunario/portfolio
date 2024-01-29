@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import StackItem from "./StackItem";
 
-export default function MyStack({ pageId }: { pageId: number }) {
+export default function MyStack() {
   return (
     <motion.section
       initial={{ y: "100vh" }}

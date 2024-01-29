@@ -44,12 +44,8 @@ export default function Home() {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        {/* {currentPageId === 1 ? (
-          <Intro key={0} pageId={currentPageId} />
-        ) : (
-          <MyStack key={1} pageId={currentPageId} />
-        )} */}
-        <Projects />
+        {/* {currentPageId === 1 ? <Intro key={0} /> : <MyStack key={1} />} */}
+        {/* <Projects /> */}
       </AnimatePresence>
     </Layout>
   );

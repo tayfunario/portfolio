@@ -42,7 +42,7 @@ const pVariants = {
   },
 };
 
-export default function Intro({ pageId }: { pageId: number }) {
+export default function Intro() {
   const [animateValue, setAnimateValue] = useState<string>("null");
   return (
     <motion.main
