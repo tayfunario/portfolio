@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
 import Layout from "@/components/Layout";
 import MyStack from "@/components/MyStack";
@@ -46,6 +47,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {/* {currentPageId === 1 ? <Intro key={0} /> : <MyStack key={1} />} */}
         {/* <Projects /> */}
+        <Contact />
       </AnimatePresence>
     </Layout>
   );

@@ -56,7 +56,7 @@
 }
 
 .text-container {
-  @apply bg-white rounded-2xl text-cyan-800;
+  @apply bg-gray-100 rounded-2xl text-cyan-800;
 }
 
 .stack-ul-li {
