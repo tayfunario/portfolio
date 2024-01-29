@@ -14,12 +14,13 @@ const mainVariants = {
 export default function Index() {
   return (
     <Layout>
-      <div className="min-h-screen my-5">
-        <motion.main
-          variants={mainVariants}
-          initial="initial"
-          animate="animate"
-        >
+      <motion.div
+        variants={mainVariants}
+        initial="initial"
+        animate="animate"
+        className="min-h-screen my-5"
+      >
+        <main>
           <MainTitle title="Link Sharing App" />
 
           <SectionTitle title="Tanıtım" />
@@ -38,7 +39,7 @@ export default function Index() {
             link="https://link-sharing-app-beta.vercel.app/"
             sourceLink="https://github.com/tayfunetta/link-sharing-app"
           />
-        </motion.main>
+        </main>
 
         <section>
           <SectionParagraph
@@ -92,7 +93,7 @@ export default function Index() {
             ]}
           />
         </section>
-      </div>
+      </motion.div>
     </Layout>
   );
 }

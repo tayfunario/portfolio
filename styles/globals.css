@@ -28,7 +28,7 @@
 }
 
 .stack-text {
-  @apply font-semibold text-sm;
+  @apply text-sm font-semibold ;
 }
 
 .project-title {

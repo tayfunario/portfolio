@@ -1,6 +1,8 @@
 import Layout from "./Layout";
 import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -29,7 +31,7 @@ export default function Projects() {
 
         <ProjectItem
           title="Link Sharing App"
-          description="Sosyal medya hesaplarının linklerinin paylaşıldığı bir uygulama."
+          description="Sosyal medya hesaplarının linklerinin paylaşıldığı bir uygulama. Sürükleyerek sıralamayı değiştirebilirsiniz."
           image="link_sharing"
           isTested={true}
         />
@@ -40,6 +42,14 @@ export default function Projects() {
           image="grostore"
           isTested={false}
         />
+
+        <Link
+          href="https://github.com/tayfunetta?tab=repositories"
+          target="_blank"
+          className="flex justify-center items-center gap-x-3 w-44 mx-auto py-2 bg-black bg-opacity-45 opacity-70 text-xs text-white font-semibold rounded-2xl"
+        >
+          Diğer Projelerim <FaExternalLinkAlt className="size-[10px]" />
+        </Link>
       </motion.div>
     </motion.section>
   );

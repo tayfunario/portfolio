@@ -7,11 +7,11 @@ const variants = {
 
 export default function SectionTitle({ title }: { title: string }) {
   return (
-    <motion.div
+    <motion.h3
       variants={variants}
-      className="text-container w-3/4 mt-7 px-4 py-2"
+      className="third-title text-container w-3/4 mt-7 px-4 py-2"
     >
-      <h3 className="third-title">{title}</h3>
-    </motion.div>
+      {title}
+    </motion.h3>
   );
 }

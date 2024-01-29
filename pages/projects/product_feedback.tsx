@@ -14,12 +14,13 @@ const mainVariants = {
 export default function Index() {
   return (
     <Layout>
-      <div className="min-h-screen my-5">
-        <motion.main
-          variants={mainVariants}
-          initial="initial"
-          animate="animate"
-        >
+      <motion.div
+        variants={mainVariants}
+        initial="initial"
+        animate="animate"
+        className="min-h-screen my-5"
+      >
+        <main>
           <MainTitle title="Product Feedback App" />
 
           <SectionTitle title="Tanıtım" />
@@ -46,7 +47,7 @@ export default function Index() {
             link="https://product-feedback-ui.vercel.app/suggestions"
             sourceLink="https://github.com/tayfunetta/product-feedback-ui"
           />
-        </motion.main>
+        </main>
 
         <section>
           <SectionParagraph
@@ -109,7 +110,7 @@ export default function Index() {
             ]}
           />
         </section>
-      </div>
+      </motion.div>
     </Layout>
   );
 }

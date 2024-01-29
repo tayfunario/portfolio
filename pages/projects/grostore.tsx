@@ -14,12 +14,13 @@ const mainVariants = {
 export default function Index() {
   return (
     <Layout>
-      <div className="min-h-screen my-5">
-        <motion.main
-          variants={mainVariants}
-          initial="initial"
-          animate="animate"
-        >
+      <motion.div
+        variants={mainVariants}
+        initial="initial"
+        animate="animate"
+        className="min-h-screen my-5"
+      >
+        <main>
           <MainTitle title="Grostore" />
 
           <SectionTitle title="Tanıtım" />
@@ -39,7 +40,7 @@ export default function Index() {
             link="https://tayfunetta.github.io/ai-grostore/"
             sourceLink="https://github.com/tayfunetta/ai-grostore"
           />
-        </motion.main>
+        </main>
 
         <section>
           <SectionParagraph
@@ -89,7 +90,7 @@ export default function Index() {
             ]}
           />
         </section>
-      </div>
+      </motion.div>
     </Layout>
   );
 }
