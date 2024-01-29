@@ -25,7 +25,7 @@ export default function Index() {
           <SectionTitle title="Tanıtım" />
 
           <IntroText
-            firstParagraph="Link Sharing App; sosyal medya hesaplarınızın linklerini tek bir yerde toplayıp, bu linkleri sergilemenizi sağlayan bir uygulamadır. Kişisel bilgilerinizi ve profil fotoğrafınızı ekleyerek arayüzü özelleştirebilirsiniz. Linkleri sürükleyerek sıralamayı değiştirebilirsiniz. Eklediğiniz linkleri düzenleyebilirsiniz."
+            firstParagraph="Link Sharing App; sosyal medya hesaplarınızın linklerini tek bir yerde toplayıp, bu linkleri sergilemenizi sağlayan bir uygulamadır. Linkleri sürükleyerek sıralamayı değiştirebilirsiniz.Kişisel bilgilerinizi ve profil fotoğrafınızı ekleyerek arayüzü özelleştirebilirsiniz. Eklediğiniz linkleri düzenleyebilirsiniz."
             stackList={[
               "Nextjs",
               "TypeScript",
@@ -43,7 +43,7 @@ export default function Index() {
         <section>
           <SectionParagraph
             title="Stack Açıklaması"
-            text="Uygulamayı parçalara ayırmayı kolaylaştırdığı için bir React framework'ü olan Next.js ile projeyi geliştirdim. Tip güvenliği ve hataları daha kolay yakalayabilmem için Typescript kullandım. Tailwind CSS ile hızlıca stil oluşturdum. React DND Kit ile sürükle-bırak mekanizmasını ekledim."
+            text="Uygulamayı parçalara ayırmayı kolaylaştırdığı ve SEO avantajı için bir React framework'ü olan Next.js ile projeyi geliştirdim. Tip güvenliği ve hataları daha kolay yakalayabilmem için Typescript kullandım. Tailwind CSS ile hızlıca stil oluşturdum. React DND Kit ile sürükle-bırak mekanizmasını ekledim."
           />
         </section>
 
