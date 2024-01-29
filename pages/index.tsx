@@ -1,6 +1,7 @@
 import Intro from "@/components/Intro";
 import Layout from "@/components/Layout";
 import MyStack from "@/components/MyStack";
+import Projects from "@/components/Projects";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -11,6 +12,7 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener("wheel", handleScroll, { passive: false });
 
+    // Prevent scrolling on stack container
     const stackContainer = document.getElementById("stack-container");
     stackContainer?.addEventListener("wheel", (e) => {
       e.stopPropagation();
@@ -42,11 +44,8 @@ export default function Home() {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        {currentPageId === 1 ? (
-          <Intro key={0} pageId={currentPageId} />
-        ) : (
-          <MyStack key={1} pageId={currentPageId} />
-        )}
+        {/* {currentPageId === 1 ? <Intro key={0} /> : <MyStack key={1} />} */}
+        {/* <Projects /> */}
       </AnimatePresence>
     </Layout>
   );

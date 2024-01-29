@@ -32,7 +32,7 @@ export default function Item({
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
-            className="absolute bottom-[135px] right-[-7px] w-28 text-xs font-semibold text-gray-700 bg-gray-100 p-1 rounded-lg"
+            className="absolute bottom-[135px] right-[-7px] w-28 infobox-text text-gray-700 bg-gray-100 p-1 rounded-lg"
           >
             Öğrenmekteyim
           </motion.div>
@@ -59,7 +59,7 @@ export default function Item({
         />
       </div>
       <h3
-        className={`absolute bottom-3 w-full font-semibold text-sm text-center text-gray-100 ${
+        className={`absolute bottom-3 w-full stack-text text-center text-gray-100 ${
           currentlyBeingLearned && "opacity-50"
         }`}
       >
