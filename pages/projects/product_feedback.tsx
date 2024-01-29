@@ -11,7 +11,7 @@ const mainVariants = {
   animate: { transition: { staggerChildren: 0.2 } },
 };
 
-export default function () {
+export default function Index() {
   return (
     <Layout>
       <div className="min-h-screen my-5">
