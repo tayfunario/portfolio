@@ -1,9 +1,15 @@
-import Layout from "./Layout";
 import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+const stackContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.6 },
+  },
+};
 
 export default function Projects({
   initialScrollDown,
@@ -35,6 +41,9 @@ export default function Projects({
       </motion.div>
 
       <motion.div
+        variants={stackContainerVariants}
+        initial="hidden"
+        animate="visible"
         id="stack-container"
         className="grow flex flex-col gap-y-8 overflow-auto rounded-2xl bg-black bg-opacity-40 my-3 p-5"
       >

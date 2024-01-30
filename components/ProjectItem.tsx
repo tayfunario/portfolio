@@ -2,12 +2,24 @@ import { TiTick } from "react-icons/ti";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 type ProjectItemProps = {
   title: string;
   description: string;
   image: string;
   isTested: boolean;
+};
+
+const divVariants = {
+  hidden: {
+    scale: 0,
+    opacity: 0
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+  },
 };
 
 export default function ProjectItem({
@@ -17,7 +29,10 @@ export default function ProjectItem({
   isTested,
 }: ProjectItemProps) {
   return (
-    <div className="relative flex flex-col text-start p-3 bg-black bg-opacity-30 rounded-2xl">
+    <motion.div
+      variants={divVariants}
+      className="relative flex flex-col text-start p-3 bg-black bg-opacity-30 rounded-2xl"
+    >
       {isTested && (
         <div className="absolute top-5 right-0 flex justify-between items-center w-36 project-btn py-1 px-3 text-gray-200 bg-emerald-800 rounded-md">
           <span>E2E Test Edildi</span>
@@ -44,6 +59,6 @@ export default function ProjectItem({
         </span>
         <FaAngleDoubleRight className="rounded-full bg-black bg-opacity-30 p-1 size-6" />
       </Link>
-    </div>
+    </motion.div>
   );
 }
