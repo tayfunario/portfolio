@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import StackItem from "./StackItem";
 import { useEffect, useState } from "react";
 
+const stackContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08 },
+  },
+};
+
 export default function MyStack({
   initialScrollDown,
 }: {
@@ -32,6 +39,9 @@ export default function MyStack({
       </motion.div>
 
       <motion.div
+        variants={stackContainerVariants}
+        initial="hidden"
+        animate="visible"
         id="stack-container"
         className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5"
       >

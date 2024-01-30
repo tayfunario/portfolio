@@ -11,6 +11,15 @@ type ItemProps = {
   currentlyBeingLearned: boolean;
 };
 
+const articleVariants = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+  },
+}
+
 export default function Item({
   id,
   name,
@@ -21,7 +30,8 @@ export default function Item({
   const [infoboxOpen, setInfoboxOpen] = useState<boolean>(false);
 
   return (
-    <article
+    <motion.article
+      variants={articleVariants}
       className={`relative w-24 h-32 bg-black bg-opacity-30 rounded-lg hover:scale-110 transition-transform`}
       onMouseOver={() => setInfoboxOpen(true)}
       onMouseLeave={() => setInfoboxOpen(false)}
@@ -65,6 +75,6 @@ export default function Item({
       >
         {name}
       </h3>
-    </article>
+    </motion.article>
   );
 }
