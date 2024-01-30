@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const stackContainerVariants = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.6 },
+    transition: { staggerChildren: 0.7 },
   },
 };
 
@@ -36,7 +36,11 @@ export default function Projects({
       transition={{ duration: 1 }}
       className="h-screen flex flex-col pt-2"
     >
-      <motion.div className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl">
+      <motion.div
+        initial={{ x: "100vw" }}
+        animate={{ x: 0, transition: { delay: 0.4 } }}
+        className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl"
+      >
         <h2 className="second-title p-2">Projelerim</h2>
       </motion.div>
 

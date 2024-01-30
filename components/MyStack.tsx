@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const stackContainerVariants = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.08 },
+    transition: { delayChildren: 0.3, staggerChildren: 0.08 },
   },
 };
 
@@ -34,7 +34,11 @@ export default function MyStack({
       transition={{ duration: 1 }}
       className="h-screen flex flex-col pt-2"
     >
-      <motion.div className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl">
+      <motion.div
+        initial={{ y: "-3vh" }}
+        animate={{ y: 0, transition: { delay: 1.3 } }}
+        className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl"
+      >
         <h2 className="second-title p-2">Bildiklerim</h2>
       </motion.div>
 

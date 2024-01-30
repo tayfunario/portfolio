@@ -59,12 +59,12 @@ export default function Item({
 
       <div className="h-[5.5rem] grid place-content-center">
         <Image
-          className={`mx-auto rounded-md ${
+          className={`mx-auto w-auto rounded-md ${
             currentlyBeingLearned && "opacity-50"
           }`}
           src={`/technologies/${src}.webp`}
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           alt={alt}
         />
       </div>
