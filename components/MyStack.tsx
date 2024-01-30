@@ -1,12 +1,29 @@
 import { motion } from "framer-motion";
 import StackItem from "./StackItem";
+import { useEffect, useState } from "react";
 
-export default function MyStack() {
+export default function MyStack({
+  initialScrollDown,
+}: {
+  initialScrollDown: boolean;
+}) {
+  const [scrollDown, setScrollDown] = useState<boolean>(initialScrollDown);
+
+  useEffect(() => {
+    document.addEventListener("wheel", (e: WheelEvent) => {
+      if (e.deltaY > 0) {
+        setScrollDown(true);
+      } else if (e.deltaY < 0) {
+        setScrollDown(false);
+      }
+    });
+  }, []);
+
   return (
     <motion.section
-      initial={{ y: "100vh" }}
+      initial={{ y: scrollDown ? "100vh" : "-100vh" }}
       animate={{ y: "0vh" }}
-      exit={{ y: "100vh" }}
+      exit={{ y: scrollDown ? "-100vh" : "100vh" }}
       transition={{ duration: 1 }}
       className="h-screen flex flex-col pt-2"
     >
@@ -14,7 +31,10 @@ export default function MyStack() {
         <h2 className="second-title p-2">Bildiklerim</h2>
       </motion.div>
 
-      <motion.div id="stack-container" className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5">
+      <motion.div
+        id="stack-container"
+        className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5"
+      >
         <StackItem
           id={0}
           name="HTML"

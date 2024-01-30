@@ -17,13 +17,13 @@ const pVariants = {
   },
 };
 
-export default function Intro() {
+export default function Contact() {
   const [animateValue, setAnimateValue] = useState<string>("null");
   return (
     <motion.main
-      initial={{ y: "-100vh" }}
+      initial={{ y: "100vh" }}
       animate={{ y: "0vh" }}
-      exit={{ y: "-100vh" }}
+      exit={{ y: "100vh" }}
       transition={{ duration: 1 }}
       onAnimationComplete={() => setAnimateValue("visible")}
       className="grid content-center h-screen"

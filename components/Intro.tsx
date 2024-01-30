@@ -44,6 +44,7 @@ const pVariants = {
 
 export default function Intro() {
   const [animateValue, setAnimateValue] = useState<string>("null");
+
   return (
     <motion.main
       initial={{ y: "-100vh" }}
