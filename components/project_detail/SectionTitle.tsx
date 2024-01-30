@@ -5,10 +5,21 @@ const variants = {
   animate: { x: 0 },
 };
 
-export default function SectionTitle({ title }: { title: string }) {
+const variants2 = {
+  initial: { x: 100 },
+  animate: { x: 0, transition: { delay: 0.3 } },
+};
+
+export default function SectionTitle({
+  title,
+  altAnim,
+}: {
+  title: string;
+  altAnim?: boolean;
+}) {
   return (
     <motion.h3
-      variants={variants}
+      variants={altAnim ? variants2 : variants}
       className="third-title text-container w-3/4 mt-7 px-4 py-2"
     >
       {title}

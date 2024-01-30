@@ -4,6 +4,12 @@ import SectionTitle from "./project_detail/SectionTitle";
 import { IoMailOutline } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 
+const mainVariants = {
+  initial: { y: "100vh" },
+  animate: { y: "0vh", transition: { duration: 1 } },
+  exit: { y: "100vh", transition: { duration: 1 } },
+};
+
 const pVariants = {
   initial: {
     y: 100,
@@ -21,14 +27,15 @@ export default function Contact() {
   const [animateValue, setAnimateValue] = useState<string>("null");
   return (
     <motion.main
-      initial={{ y: "100vh" }}
-      animate={{ y: "0vh" }}
-      exit={{ y: "100vh" }}
+      variants={mainVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
       transition={{ duration: 1 }}
       onAnimationComplete={() => setAnimateValue("visible")}
       className="grid content-center h-screen"
     >
-      <SectionTitle title="İletişim" />
+      <SectionTitle title="İletişim" altAnim={true} />
 
       <motion.div
         variants={pVariants}
