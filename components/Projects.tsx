@@ -3,10 +3,33 @@ import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-export default function Projects() {
+export default function Projects({
+  initialScrollDown,
+}: {
+  initialScrollDown: boolean;
+}) {
+  const [scrollDown, setScrollDown] = useState<boolean>(initialScrollDown);
+
+  useEffect(() => {
+    document.addEventListener("wheel", (e: WheelEvent) => {
+      if (e.deltaY > 0) {
+        setScrollDown(true);
+      } else if (e.deltaY < 0) {
+        setScrollDown(false);
+      }
+    });
+  }, []);
+
   return (
-    <motion.section className="h-screen flex flex-col pt-2">
+    <motion.section
+      initial={{ y: scrollDown ? "100vh" : "-100vh" }}
+      animate={{ y: "0vh" }}
+      exit={{ y: scrollDown ? "-100vh" : "100vh" }}
+      transition={{ duration: 1 }}
+      className="h-screen flex flex-col pt-2"
+    >
       <motion.div className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl">
         <h2 className="second-title p-2">Projelerim</h2>
       </motion.div>
