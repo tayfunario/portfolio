@@ -49,7 +49,7 @@ export default function Projects({
         initial="hidden"
         animate="visible"
         id="stack-container"
-        className="grow flex flex-col gap-y-8 overflow-auto rounded-2xl bg-black bg-opacity-40 my-3 p-5"
+        className="grow flex flex-col gap-y-8 overflow-auto rounded-2xl bg-black bg-opacity-40 my-3 md:mx-12 sm:mx-7 p-5"
       >
         <ProjectItem
           title="Product Feedback App"

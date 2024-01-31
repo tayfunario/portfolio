@@ -1,6 +1,6 @@
 import { CgSandClock } from "react-icons/cg";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type ItemProps = {
@@ -18,7 +18,7 @@ const articleVariants = {
   visible: {
     scale: 1,
   },
-}
+};
 
 export default function Item({
   id,
@@ -32,7 +32,8 @@ export default function Item({
   return (
     <motion.article
       variants={articleVariants}
-      className={`relative w-24 h-32 bg-black bg-opacity-30 rounded-lg hover:scale-110 transition-transform`}
+      whileHover={{ scale: 1.1 }}
+      className="relative w-24 h-32 bg-black bg-opacity-30 rounded-lg"
       onMouseOver={() => setInfoboxOpen(true)}
       onMouseLeave={() => setInfoboxOpen(false)}
     >

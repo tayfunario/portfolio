@@ -7,7 +7,7 @@ interface SectionParagraphProps {
 }
 
 const variants = {
-  initial: { x: 1000 },
+  initial: { x: "100vw" },
   animate: { x: 0 },
 };
 

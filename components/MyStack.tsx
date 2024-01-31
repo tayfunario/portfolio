@@ -47,7 +47,7 @@ export default function MyStack({
         initial="hidden"
         animate="visible"
         id="stack-container"
-        className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5"
+        className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 md:mx-12 sm:mx-7 p-5"
       >
         <StackItem
           id={0}
