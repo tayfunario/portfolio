@@ -10,17 +10,14 @@ const mainVariants = {
   exit: { y: "100vh", transition: { duration: 1 } },
 };
 
-const pVariants = {
-  initial: {
-    y: 100,
-  },
-  visible: {
-    y: 0,
-    transition: {
-      type: "spring",
-      mass: 0.1,
-    },
-  },
+const divVariants = {
+  initial: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+
+const itemVariants = {
+  initial: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
 };
 
 export default function Contact() {
@@ -38,12 +35,13 @@ export default function Contact() {
       <SectionTitle title="İletişim" altAnim={true} />
 
       <motion.div
-        variants={pVariants}
+        variants={divVariants}
         initial="initial"
         animate={animateValue}
         className="text-container mt-2 px-5 py-8"
       >
-        <a
+        <motion.a
+          variants={itemVariants}
           href="mailto:tayfunemrekahraman@gmail.com"
           className="flex justify-center items-center gap-x-2 mb-2"
         >
@@ -51,22 +49,23 @@ export default function Contact() {
           <span className="text-sm font-medium text-cyan-600">
             tayfunemrekahraman@gmail.com
           </span>
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+          variants={itemVariants}
           href="https://www.linkedin.com/in/tayfun-kahraman-37b4861b0/"
           target="_blank"
           className="flex justify-center items-center gap-x-1 mb-4"
         >
           <FaLinkedin className="size-4" />
           <span className="font-medium text-cyan-600">LinkedIn</span>
-        </a>
+        </motion.a>
 
         <form
           action="https://formsubmit.co/tayfunemrekahraman@gmail.com"
           method="POST"
         >
-          <fieldset>
+          <motion.fieldset variants={itemVariants}>
             <legend>
               <label
                 htmlFor="name"
@@ -82,9 +81,9 @@ export default function Contact() {
               name="name"
               required
             />
-          </fieldset>
+          </motion.fieldset>
 
-          <fieldset className="my-3">
+          <motion.fieldset variants={itemVariants} className="my-3">
             <legend>
               <label
                 htmlFor="email"
@@ -100,9 +99,9 @@ export default function Contact() {
               name="email"
               required
             />
-          </fieldset>
+          </motion.fieldset>
 
-          <fieldset>
+          <motion.fieldset variants={itemVariants}>
             <legend>
               <label
                 htmlFor="message"
@@ -118,8 +117,9 @@ export default function Contact() {
               rows={3}
               required
             />
-          </fieldset>
+          </motion.fieldset>
           <motion.button
+            variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"

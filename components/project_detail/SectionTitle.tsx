@@ -6,8 +6,8 @@ const variants = {
 };
 
 const variants2 = {
-  initial: { x: 100 },
-  animate: { x: 0, transition: { delay: 0.3 } },
+  initial: { x: "100vw" },
+  animate: { x: 0, transition: { delay: 0.5 } },
 };
 
 export default function SectionTitle({
