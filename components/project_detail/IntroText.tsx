@@ -46,9 +46,9 @@ export default function IntroText({
 
       {secondParagraph && <p className="text-sm">{secondParagraph}</p>}
 
-      <h4 className="font-black mt-3 underline underline-offset-2">Stack</h4>
+      <h4 className="font-black mt-3 mb-1 underline underline-offset-2">Stack</h4>
 
-      <ul className="flex flex-wrap gap-x-3 gap-y-1">
+      <ul className="flex flex-wrap gap-x-3 gap-y-2">
         {stackList.map((stack, index) => (
           <li key={index} className="stack-ul-li">
             {stack}

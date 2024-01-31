@@ -60,5 +60,5 @@
 }
 
 .stack-ul-li {
-  @apply text-cyan-800 bg-cyan-50 p-1 rounded-lg text-sm font-semibold;
+  @apply text-cyan-800 bg-cyan-100 px-2 py-1 rounded-lg text-sm font-semibold;
 }
