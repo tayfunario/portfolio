@@ -60,7 +60,7 @@ export default function IntroText({
         <Link
           href={sourceLink}
           target="_blank"
-          className="project-btn flex justify-center items-center gap-x-2 bg-cyan-100 px-2 py-1 rounded-2xl hover:scale-110"
+          className="project-btn flex justify-center items-center gap-x-2 bg-cyan-200 px-2 py-1 rounded-2xl hover:scale-110 transition-transform"
         >
           <span className="mr-px hover:underline underline-offset-2">
             Kaynak Kodu
@@ -98,7 +98,7 @@ export default function IntroText({
           </AnimatePresence>
           <button
             id="visit-site-btn"
-            className="project-btn flex justify-center items-center gap-x-2 bg-cyan-100 px-2 py-1 rounded-2xl hover:scale-110"
+            className="project-btn flex justify-center items-center gap-x-2 bg-cyan-200 px-2 py-1 rounded-2xl hover:scale-110 transition-transform"
             onClick={(e) => {
               e.preventDefault();
               setShowAlert(true);

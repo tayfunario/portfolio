@@ -12,7 +12,7 @@ const config: Config = {
         "DM Sans": ["dmsans", "sans-serif"],
       },
       colors: {
-        "gradient-start": "hsl(190, 100%, 40%)",
+        "gradient-start": "hsl(190, 100%, 43%)",
         "gradient-end": "hsl(205, 100%, 50%)",
       }
     },

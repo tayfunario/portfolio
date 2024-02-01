@@ -15,16 +15,24 @@ export default function MyStack({
   initialScrollDown: boolean;
 }) {
   const [scrollDown, setScrollDown] = useState<boolean>(initialScrollDown);
+  let lock: boolean = false
 
   useEffect(() => {
     document.addEventListener("wheel", (e: WheelEvent) => {
-      if (e.deltaY > 0) {
-        setScrollDown(true);
-      } else if (e.deltaY < 0) {
-        setScrollDown(false);
+      if (!lock) {
+        if (e.deltaY > 0) {
+          setScrollDown(true);
+          lock = true;
+        } else if (e.deltaY < 0) {
+          setScrollDown(false);
+          lock = true;
+        }
       }
     });
+
+    return () => document.removeEventListener("wheel", () => {});
   }, []);
+  // LOCK MEKAANİĞİ EKLE
 
   return (
     <motion.section
