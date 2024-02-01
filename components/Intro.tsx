@@ -63,14 +63,14 @@ export default function Intro() {
         alt="illustration"
       />
 
-      <motion.div
+      <motion.h1
         variants={h1Variants}
         initial="initial"
         animate={animateValue}
-        className="text-container col-span-2 self-end"
+        className="main-title text-container inline self-end py-5 px-3"
       >
-        <h1 className="main-title py-5 px-3">Merhaba!</h1>
-      </motion.div>
+        Merhaba!
+      </motion.h1>
 
       <motion.div
         variants={pVariants}
@@ -79,11 +79,14 @@ export default function Intro() {
         className="text-container self-start col-span-3"
       >
         <p className="copy-1 p-3">
-          Ben Tayfun. Junior seviye{" "}
+          Ben Tayfun. 21 yaşındayım. İstanbul/Kocaeli'de yaşıyorum. Junior
+          seviye{" "}
           <span className="text-gradient-end font-black">Full-stack</span>{" "}
-          geliştiriciyim. Aslında lisedeyken Java ve C# ile programlama
-          yapıyordum fakat artık tamamen Javascript ve Typescript ile
-          ilgileniyorum ve web uygulamaları geliştiriyorum.
+          geliştiriciyim. Yazılıma 15 yaşında C++ ile başladım. Ardından
+          sırasıyla C# ve Java öğrendim ve biraz da onlarla uğraştım. Sonrasında
+          bu dillerin bir işe yaramadığı yanılgısına kapıldım ve kullanmayı
+          bıraktım (en büyük pişmanlığımdır :D). Şimdiyse Javascript/Typescript
+          kullanarak web uygulamaları geliştiriyorum.
         </p>
       </motion.div>
     </motion.main>

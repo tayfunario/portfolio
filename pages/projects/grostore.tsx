@@ -8,7 +8,7 @@ import SectionList from "@/components/project_detail/SectionList";
 import { motion } from "framer-motion";
 
 const mainVariants = {
-  animate: { transition: { staggerChildren: 0.2 } },
+  animate: { transition: { staggerChildren: 0.1 } },
 };
 
 export default function Index() {

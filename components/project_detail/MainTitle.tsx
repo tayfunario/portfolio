@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaChevronLeft } from "react-icons/fa";
 
 const variants = {
-  initial: { x: 1000 },
+  initial: { x: "100vw" },
   animate: { x: 0 },
 };
 

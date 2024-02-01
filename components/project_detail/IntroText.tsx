@@ -16,7 +16,7 @@ interface IntroTextProps {
 }
 
 const variants = {
-  initial: { x: 1000 },
+  initial: { x: "100vw" },
   animate: { x: 0 },
 };
 
@@ -46,9 +46,9 @@ export default function IntroText({
 
       {secondParagraph && <p className="text-sm">{secondParagraph}</p>}
 
-      <h4 className="font-black mt-3 underline underline-offset-2">Stack</h4>
+      <h4 className="font-black mt-3 mb-1 underline underline-offset-2">Stack</h4>
 
-      <ul className="flex flex-wrap gap-x-3 gap-y-1">
+      <ul className="flex flex-wrap gap-x-3 gap-y-2">
         {stackList.map((stack, index) => (
           <li key={index} className="stack-ul-li">
             {stack}
@@ -60,7 +60,7 @@ export default function IntroText({
         <Link
           href={sourceLink}
           target="_blank"
-          className="project-btn flex justify-center items-center gap-x-2 bg-cyan-100 px-2 py-1 rounded-2xl hover:scale-110"
+          className="project-btn flex justify-center items-center gap-x-2 bg-cyan-200 px-2 py-1 rounded-2xl hover:scale-110 transition-transform"
         >
           <span className="mr-px hover:underline underline-offset-2">
             Kaynak Kodu
@@ -98,7 +98,7 @@ export default function IntroText({
           </AnimatePresence>
           <button
             id="visit-site-btn"
-            className="project-btn flex justify-center items-center gap-x-2 bg-cyan-100 px-2 py-1 rounded-2xl hover:scale-110"
+            className="project-btn flex justify-center items-center gap-x-2 bg-cyan-200 px-2 py-1 rounded-2xl hover:scale-110 transition-transform"
             onClick={(e) => {
               e.preventDefault();
               setShowAlert(true);

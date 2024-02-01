@@ -15,16 +15,24 @@ export default function MyStack({
   initialScrollDown: boolean;
 }) {
   const [scrollDown, setScrollDown] = useState<boolean>(initialScrollDown);
+  let lock: boolean = false
 
   useEffect(() => {
     document.addEventListener("wheel", (e: WheelEvent) => {
-      if (e.deltaY > 0) {
-        setScrollDown(true);
-      } else if (e.deltaY < 0) {
-        setScrollDown(false);
+      if (!lock) {
+        if (e.deltaY > 0) {
+          setScrollDown(true);
+          lock = true;
+        } else if (e.deltaY < 0) {
+          setScrollDown(false);
+          lock = true;
+        }
       }
     });
+
+    return () => document.removeEventListener("wheel", () => {});
   }, []);
+  // LOCK MEKAANİĞİ EKLE
 
   return (
     <motion.section
@@ -47,7 +55,7 @@ export default function MyStack({
         initial="hidden"
         animate="visible"
         id="stack-container"
-        className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 p-5"
+        className="grow overflow-auto grid grid-cols-3 place-items-center gap-5 rounded-2xl bg-black bg-opacity-40 my-3 md:mx-12 sm:mx-7 p-5"
       >
         <StackItem
           id={0}
