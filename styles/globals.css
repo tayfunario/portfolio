@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+body {
+  @apply bg-cyan-950
+}
+
 .main-title {
   @apply text-4xl font-black text-cyan-700;
 }
