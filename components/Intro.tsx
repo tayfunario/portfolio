@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import LanguageSwitch from "./LanguageSwitch";
 
 const imgVariants = {
   initial: {
@@ -54,6 +55,8 @@ export default function Intro() {
       onAnimationComplete={() => setAnimateValue("visible")}
       className="w-full grid grid-cols-3 grid-rows-2 gap-3 h-screen"
     >
+      <LanguageSwitch />
+
       <motion.img
         variants={imgVariants}
         initial="initial"
@@ -67,7 +70,7 @@ export default function Intro() {
         variants={h1Variants}
         initial="initial"
         animate={animateValue}
-        className="main-title text-container inline self-end py-5 px-3"
+        className="main-title text-container col-span-2 inline self-end py-5 px-3"
       >
         Merhaba!
       </motion.h1>

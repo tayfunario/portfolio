@@ -46,7 +46,7 @@ export default function Projects({
     >
       <motion.div
         initial={{ x: "100vw" }}
-        animate={{ x: 0, transition: { delay: 0.4 } }}
+        animate={{ x: 0, transition: { delay: 1 } }}
         className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl"
       >
         <h2 className="second-title p-2">My Projects</h2>
