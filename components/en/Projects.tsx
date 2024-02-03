@@ -49,7 +49,7 @@ export default function Projects({
         animate={{ x: 0, transition: { delay: 0.4 } }}
         className="col-span-2 w-full bg-white bg-opacity-90 self-end rounded-2xl"
       >
-        <h2 className="second-title p-2">Projelerim</h2>
+        <h2 className="second-title p-2">My Projects</h2>
       </motion.div>
 
       <motion.div
@@ -61,28 +61,27 @@ export default function Projects({
       >
         <ProjectItem
           title="Product Feedback App"
-          description="Yapılan ürünlerin geri bildirimlerini toplayan bir uygulama."
+          description="Application that collects feedback on products."
           image="product_feedback"
           isTested={true}
         />
 
         <ProjectItem
           title="Invoice App"
-          description="Faturaların kaydedildiği ve düzenlendiği bir uygulama."
+          description="Application that allows you to create and manage invoices."
           image="invoice"
           isTested={true}
         />
-
         <ProjectItem
           title="Link Sharing App"
-          description="Sosyal medya hesaplarının linklerinin paylaşıldığı bir uygulama. Sürükleyerek sıralamayı değiştirebilirsiniz."
+          description="An application where links to social media accounts are shared. You can change the order by dragging."
           image="link_sharing"
           isTested={true}
         />
 
         <ProjectItem
           title="Grostore"
-          description="Çeşitli özelliklere sahip gelişmiş e-ticaret uygulaması."
+          description="Advanced e-commerce application with a wide range of features."
           image="grostore"
           isTested={false}
         />
@@ -92,7 +91,7 @@ export default function Projects({
           target="_blank"
           className="flex justify-center items-center gap-x-3 w-44 mx-auto py-2 bg-black bg-opacity-45 opacity-70 text-xs text-white font-semibold rounded-2xl"
         >
-          Diğer Projelerim <FaExternalLinkAlt className="size-[10px]" />
+          Other Projects <FaExternalLinkAlt className="size-[10px]" />
         </Link>
       </motion.div>
     </motion.section>
