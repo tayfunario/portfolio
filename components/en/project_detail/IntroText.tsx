@@ -46,7 +46,9 @@ export default function IntroText({
 
       {secondParagraph && <p className="text-sm">{secondParagraph}</p>}
 
-      <h4 className="font-black mt-3 mb-1 underline underline-offset-2">Stack</h4>
+      <h4 className="font-black mt-3 mb-1 underline underline-offset-2">
+        Stack
+      </h4>
 
       <ul className="flex flex-wrap gap-x-3 gap-y-2">
         {stackList.map((stack, index) => (
@@ -63,7 +65,7 @@ export default function IntroText({
           className="project-btn flex justify-center items-center gap-x-2 bg-cyan-200 px-2 py-1 rounded-2xl hover:scale-110 transition-transform"
         >
           <span className="mr-px hover:underline underline-offset-2">
-            Kaynak Kodu
+            Source Code
           </span>
           <FaGithub className="size-4" />
         </Link>
@@ -81,8 +83,9 @@ export default function IntroText({
                 <div className="flex items-center gap-x-4 px-1">
                   <FaExclamationTriangle className="text-sky-500 size-16" />
                   <p className="text-xs  text-sky-600">
-                    Eğer linkteki sayfa açılmazsa sayfa açılana kadar reset atıp
-                    bekleyin. Vercel kaynaklı bir sorun oluşabilir.
+                    If the page does not open via the link, please reset and
+                    wait until the page opens. It may be due to an issue with
+                    Vercel.
                   </p>
                 </div>
                 <Link
@@ -91,7 +94,7 @@ export default function IntroText({
                   className="block w-16 mx-auto bg-sky-600 text-center text-gray-100 text-xs font-bold mt-3 p-1 rounded-lg"
                   onClick={() => setShowAlert(false)}
                 >
-                  Tamam
+                  Got it
                 </Link>
               </motion.div>
             )}
@@ -105,7 +108,7 @@ export default function IntroText({
             }}
           >
             <span className="mr-px hover:underline underline-offset-2">
-              Siteyi Ziyaret Et
+              Visit Site
             </span>
             <FaExternalLinkAlt className="size-3" />
           </button>

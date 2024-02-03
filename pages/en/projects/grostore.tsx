@@ -25,7 +25,6 @@ export default function Index() {
 
           <SectionTitle title="Introduction" />
 
-          {/* Admin paneline giriş yaparak ürünleri, kategorileri ve siparişleri yönetebilirsiniz. Gönderdiğiniz siparişler ilgili kullanıcının geçmiş siparişlerine eklenir. email: admin@test.com, şifre: admin123 */}
           <IntroText
             firstParagraph="Grostore is an e-commerce application. Users can add products to the cart, view the cart, and complete the payment process. Users can also view their previous orders and active orders from the profile page. They can use dark mode according to the situation. However, Grostore is my first big project, so please excuse some errors :)"
             secondParagraph="You can log in to the admin panel and manage products, categories, and orders. The orders you send are added to the relevant user's order history. email: admin@test.com, password: admin123"

@@ -51,7 +51,7 @@ export default function ProjectItem({
       <p className="project-description text-gray-300">{description}</p>
 
       <Link
-        href={`/projects/${image}`}
+        href={`/en/projects/${image}`}
         className="project-btn self-end flex justify-around items-center w-36 text-gray-200 bg-black bg-opacity-20 mt-2 px-2 py-1 rounded-2xl"
       >
         <span className="mr-px hover:underline underline-offset-2">

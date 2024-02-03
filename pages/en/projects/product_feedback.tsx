@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import MainTitle from "@/components/project_detail/MainTitle";
-import SectionTitle from "@/components/project_detail/SectionTitle";
-import IntroText from "@/components/project_detail/IntroText";
-import SectionParagraph from "@/components/project_detail/SectionParagraph";
-import SectionList from "@/components/project_detail/SectionList";
+import MainTitle from "@/components/en/project_detail/MainTitle";
+import SectionTitle from "@/components/en/project_detail/SectionTitle";
+import IntroText from "@/components/en/project_detail/IntroText";
+import SectionParagraph from "@/components/en/project_detail/SectionParagraph";
+import SectionList from "@/components/en/project_detail/SectionList";
 import { motion } from "framer-motion";
 
 const mainVariants = {
