@@ -55,7 +55,7 @@ export default function Intro() {
       onAnimationComplete={() => setAnimateValue("visible")}
       className="w-full grid grid-cols-3 grid-rows-2 gap-3 h-screen"
     >
-      <LanguageSwitch />
+      <LanguageSwitch initialLanguage="tr" />
 
       <motion.img
         variants={imgVariants}

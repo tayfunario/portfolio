@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import LanguageSwitch from "../LanguageSwitch";
 
 const imgVariants = {
   initial: {
@@ -54,6 +55,8 @@ export default function Intro() {
       onAnimationComplete={() => setAnimateValue("visible")}
       className="w-full grid grid-cols-3 grid-rows-2 gap-3 h-screen"
     >
+      <LanguageSwitch initialLanguage="en" />
+
       <motion.img
         variants={imgVariants}
         initial="initial"

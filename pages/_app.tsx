@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
           clipPath: "polygon(100% 0, 0 0, 0 0, 100% 0)",
           opacity: 0,
         }}
-        transition={{ delay: 0.1, duration: 0.25 }}
+        transition={{ duration: 0.4 }}
       >
         <Component {...pageProps} />
       </motion.div>
