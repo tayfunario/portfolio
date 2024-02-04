@@ -88,9 +88,8 @@ export default function Intro() {
           geliştiriciyim. Yazılıma 15 yaşında C++ ile başladım. Ardından
           sırasıyla C# ve Java öğrendim ve biraz da onlarla uğraştım. Sonrasında
           bu dillerin bir işe yaramadığı yanılgısına kapıldım ve kullanmayı
-          bıraktım (en büyük pişmanlığımdır :D). Şimdiyse reusable ve okuması
-          kolay komponentler kullanarak Javascript/Typescript uygulamaları
-          geliştiriyorum.
+          bıraktım (en büyük pişmanlığımdır :D). Şimdiyse Javascript/Typescript
+          kullanarak web uygulamaları geliştiriyorum.
         </p>
       </motion.div>
     </motion.main>
