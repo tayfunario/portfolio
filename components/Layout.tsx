@@ -1,4 +1,5 @@
 import { FaAngleDown } from "react-icons/fa";
+import PageIndicator from "./PageIndicator";
 
 export default function Layout({
   pageNum,
@@ -13,6 +14,7 @@ export default function Layout({
         <FaAngleDown className="absolute bottom-2 right-1/2 translate-x-1/2 size-8 text-white" />
       )}
       <div className="mx-auto max-w-screen-sm px-2">{children}</div>
+      <PageIndicator pageNum={pageNum} />
     </div>
   );
 }
