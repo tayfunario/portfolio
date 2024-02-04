@@ -47,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <Layout>
+    <Layout pageNum={currentPageId}>
       <AnimatePresence mode="wait">
         {
           {
