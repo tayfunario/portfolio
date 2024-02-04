@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import LanguageSwitch from "./LanguageSwitch";
+import LanguageSwitch from "../LanguageSwitch";
 
 const imgVariants = {
   initial: {
@@ -55,7 +55,7 @@ export default function Intro() {
       onAnimationComplete={() => setAnimateValue("visible")}
       className="w-full grid grid-cols-3 grid-rows-2 gap-3 h-screen"
     >
-      <LanguageSwitch initialLanguage="tr" />
+      <LanguageSwitch initialLanguage="en" />
 
       <motion.img
         variants={imgVariants}
@@ -70,9 +70,9 @@ export default function Intro() {
         variants={h1Variants}
         initial="initial"
         animate={animateValue}
-        className="main-title text-container col-span-2 inline self-end py-5 px-3"
+        className="main-title text-container inline self-end py-5 px-3"
       >
-        Merhaba!
+        Hi!
       </motion.h1>
 
       <motion.div
@@ -82,15 +82,13 @@ export default function Intro() {
         className="text-container self-start col-span-3"
       >
         <p className="copy-1 p-3">
-          Ben Tayfun. 21 yaşındayım. İstanbul/Kocaeli'de yaşıyorum. Junior
-          seviye{" "}
-          <span className="text-gradient-end font-black">Full-stack</span>{" "}
-          geliştiriciyim. Yazılıma 15 yaşında C++ ile başladım. Ardından
-          sırasıyla C# ve Java öğrendim ve biraz da onlarla uğraştım. Sonrasında
-          bu dillerin bir işe yaramadığı yanılgısına kapıldım ve kullanmayı
-          bıraktım (en büyük pişmanlığımdır :D). Şimdiyse reusable ve okuması
-          kolay komponentler kullanarak Javascript/Typescript uygulamaları
-          geliştiriyorum.
+          I'm Tayfun. I'm 21 years old. I live in Istanbul/Kocaeli. I'm a Junior
+          <span className="text-gradient-end font-black"> Full-stack</span>{" "}
+          developer. I started coding at the age of 15 with C++. Then I learned
+          C# and Java in order and dealt with them a bit. Then I fell into the
+          delusion that these languages were useless and stopped using them (my
+          biggest regret :D). Now i'm developing JavaScript/TypeScript
+          applications using reusable and easily readable components.
         </p>
       </motion.div>
     </motion.main>

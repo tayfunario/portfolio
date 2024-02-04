@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import SectionTitle from "./project_detail/SectionTitle";
+import SectionTitle from "../project_detail/SectionTitle";
 import { IoMailOutline } from "react-icons/io5";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
@@ -32,7 +32,7 @@ export default function Contact() {
       onAnimationComplete={() => setAnimateValue("visible")}
       className="grid content-center h-screen"
     >
-      <SectionTitle title="İletişim" />
+      <SectionTitle title="Contact" />
 
       <motion.div
         variants={divVariants}
@@ -81,7 +81,7 @@ export default function Contact() {
                 htmlFor="name"
                 className="text-sm text-cyan-700 font-semibold"
               >
-                Adınız
+                Your Name
               </label>
             </legend>
             <input
@@ -99,7 +99,7 @@ export default function Contact() {
                 htmlFor="email"
                 className="text-sm text-cyan-700 font-semibold"
               >
-                E-mail adresiniz
+                Your E-mail
               </label>
             </legend>
             <input
@@ -117,7 +117,7 @@ export default function Contact() {
                 htmlFor="message"
                 className="text-sm text-cyan-700 font-semibold"
               >
-                Mesajınız
+                Your Message
               </label>
             </legend>
             <textarea
@@ -135,7 +135,7 @@ export default function Contact() {
             type="submit"
             className="text-white mt-3 px-3 py-2 font-semibold bg-cyan-600 rounded-xl"
           >
-            Gönder
+            Send
           </motion.button>
         </form>
       </motion.div>

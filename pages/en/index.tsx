@@ -1,8 +1,8 @@
-import Contact from "@/components/Contact";
-import Intro from "@/components/Intro";
+import Contact from "@/components/en/Contact";
+import Intro from "@/components/en/Intro";
 import Layout from "@/components/Layout";
-import MyStack from "@/components/MyStack";
-import Projects from "@/components/Projects";
+import MyStack from "@/components/en/MyStack";
+import Projects from "@/components/en/Projects";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
