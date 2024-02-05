@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import SectionTitle from "./project_detail/SectionTitle";
 import { IoMailOutline } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const mainVariants = {
   initial: { y: "100vh" },
@@ -32,7 +32,7 @@ export default function Contact() {
       onAnimationComplete={() => setAnimateValue("visible")}
       className="grid content-center h-screen"
     >
-      <SectionTitle title="İletişim" altAnim={true} />
+      <SectionTitle title="İletişim" />
 
       <motion.div
         variants={divVariants}
@@ -55,10 +55,20 @@ export default function Contact() {
           variants={itemVariants}
           href="https://www.linkedin.com/in/tayfun-kahraman-37b4861b0/"
           target="_blank"
-          className="flex justify-center items-center gap-x-1 mb-4"
+          className="flex justify-center items-center gap-x-1 mb-2"
         >
           <FaLinkedin className="size-4" />
           <span className="font-medium text-cyan-600">LinkedIn</span>
+        </motion.a>
+        
+        <motion.a
+          variants={itemVariants}
+          href="https://github.com/tayfunetta?tab=repositories"
+          target="_blank"
+          className="flex justify-center items-center gap-x-1 mb-4"
+        >
+          <FaGithub className="size-4" />
+          <span className="font-medium text-cyan-600">Github</span>
         </motion.a>
 
         <form
