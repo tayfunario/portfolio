@@ -87,7 +87,7 @@ export default function Intro() {
           developer. I started coding at the age of 15 with C++. Then I learned
           C# and Java in order and dealt with them a bit. Then I fell into the
           delusion that these languages were useless and stopped using them (my
-          biggest regret :D). Now i'm developing JavaScript/TypeScript
+          biggest regret :D). Now i develop JavaScript/TypeScript
           applications using reusable and easily readable components.
         </p>
       </motion.div>
