@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePageListener } from "./useListener";
 
 const stackContainerVariants = {
   hidden: {},
@@ -20,21 +21,8 @@ export default function Projects({
   let lock: boolean = false;
 
   useEffect(() => {
-    document.addEventListener("wheel", (e: WheelEvent) => {
-      if (!lock) {
-        if (e.deltaY > 0) {
-          setScrollDown(true);
-          lock = true;
-        } else if (e.deltaY < 0) {
-          setScrollDown(false);
-          lock = true;
-        }
-      }
-    });
-
-    return () => document.removeEventListener("wheel", () => {});
+    usePageListener({ lock, callback: setScrollDown });
   }, []);
-  // LOCK MEKAANİĞİ EKLE
 
   return (
     <motion.section
