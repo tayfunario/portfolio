@@ -32,15 +32,15 @@ body {
 }
 
 .stack-text {
-  @apply text-sm font-semibold ;
+  @apply sm:text-sm text-xs font-semibold ;
 }
 
 .project-title {
-  @apply font-black text-lg;
+  @apply font-black sm:text-lg;
 }
 
 .project-description {
-  @apply text-sm;
+  @apply sm:text-sm text-xs;
 }
 
 .project-btn {

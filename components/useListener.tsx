@@ -51,28 +51,28 @@ export function useTouchListener({
   setCurrentPageId: (val: number) => void;
   setInitialScrollDown: (val: boolean) => void;
 }) {
-  let initialY: number = 0;
+  let startY: number = -5;
   window.addEventListener("touchstart", (e: TouchEvent) => {
     if ((e.target as HTMLElement).closest("#stack-container")) {
       e.stopPropagation();
-      initialY = 0;
+      startY = -5;
     } else {
-      initialY = e.touches[0].clientY;
+      startY = e.touches[0].clientY;
     }
   });
 
-  window.addEventListener("touchend", (e: TouchEvent) => {
-    if (initialY !== 0) {
+  window.addEventListener("touchmove", (e: TouchEvent) => {
+    if (startY !== -5) {
       const lastY = e.changedTouches[0].clientY;
-      if (lastY - initialY > 0 && currentPageId > 1) {
+      if (lastY > startY && currentPageId > 1) {
         setCurrentPageId(currentPageId - 1);
         setInitialScrollDown(false);
-      } else if (lastY - initialY < 0 && currentPageId < 4) {
+      } else if (lastY < startY && currentPageId < 4) {
         setCurrentPageId(currentPageId + 1);
         setInitialScrollDown(true);
       }
+      startY = -5;
     }
-    initialY = 0;
   });
 }
 
@@ -93,12 +93,12 @@ export function useTouchPageListener({
     }
   });
 
-  window.addEventListener("touchend", (e: TouchEvent) => {
+  window.addEventListener("touchmove", (e: TouchEvent) => {
     if (initialY !== -5) {
       const lastY = e.changedTouches[0].clientY;
-      if (lastY - initialY > 0) {
+      if (lastY > initialY) {
         callback(false);
-      } else if (lastY - initialY < 0) {
+      } else if (lastY < initialY) {
         callback(true);
       }
     }

@@ -33,7 +33,7 @@ export default function Item({
     <motion.article
       variants={articleVariants}
       whileHover={{ scale: 1.1 }}
-      className="relative w-24 h-32 bg-black bg-opacity-30 rounded-lg"
+      className="relative sm:w-24 sm:h-32 w-20 h-28 bg-black bg-opacity-30 rounded-lg"
       onMouseOver={() => setInfoboxOpen(true)}
       onMouseLeave={() => setInfoboxOpen(false)}
     >
@@ -52,15 +52,15 @@ export default function Item({
 
       {currentlyBeingLearned && (
         <CgSandClock
-          className={`absolute bottom-[108px] left-[72px] text-gray-300 size-6 transition-all ${
+          className={`absolute md:left-[72px] left-16 text-gray-300 size-6 transition-all ${
             infoboxOpen ? "rotate-180" : "rotate-0"
           }`}
         />
       )}
 
-      <div className="h-[5.5rem] grid place-content-center">
+      <div className="h-[5rem] grid place-content-center">
         <Image
-          className={`mx-auto w-auto rounded-md ${
+          className={`mx-auto w-auto rounded-md sm:size-14 size-10 ${
             currentlyBeingLearned && "opacity-50"
           }`}
           src={`/technologies/${src}.webp`}
