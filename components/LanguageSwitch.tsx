@@ -47,7 +47,7 @@ export default function LanguageSwitch({
         className="pt-[6px] pb-3 pl-7 pr-3 hover:bg-sky-100"
         onClick={() => {
           setChosenLanguage(chosenLanguage == "tr" ? "en" : "tr");
-          router.push(`/portfolio/${chosenLanguage == "tr" ? "en" : "/"}`);
+          router.push(`/${chosenLanguage == "tr" ? "en" : "/"}`);
         }}
       >
         <Image
