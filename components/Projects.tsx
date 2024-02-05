@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePageListener, useTouchPageListener } from "./useListener";
 
 const stackContainerVariants = {
   hidden: {},
@@ -20,21 +21,12 @@ export default function Projects({
   let lock: boolean = false;
 
   useEffect(() => {
-    document.addEventListener("wheel", (e: WheelEvent) => {
-      if (!lock) {
-        if (e.deltaY > 0) {
-          setScrollDown(true);
-          lock = true;
-        } else if (e.deltaY < 0) {
-          setScrollDown(false);
-          lock = true;
-        }
-      }
-    });
-
-    return () => document.removeEventListener("wheel", () => {});
+    if (window.innerWidth > 800) {
+      usePageListener({ lock, callback: setScrollDown });
+    } else {
+      useTouchPageListener({ lock, callback: setScrollDown });
+    }
   }, []);
-  // LOCK MEKAANİĞİ EKLE
 
   return (
     <motion.section
@@ -57,7 +49,7 @@ export default function Projects({
         initial="hidden"
         animate="visible"
         id="stack-container"
-        className="grow flex flex-col gap-y-8 overflow-auto rounded-2xl bg-black bg-opacity-40 my-3 md:mx-12 sm:mx-7 p-5"
+        className="grow flex flex-col gap-y-8 overflow-auto rounded-2xl bg-black bg-opacity-40 my-3 md:mx-12 mx-10 p-5"
       >
         <ProjectItem
           title="Product Feedback App"
