@@ -5,18 +5,26 @@ import MyStack from "@/components/MyStack";
 import Projects from "@/components/Projects";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { useIndexListener } from "@/components/useListener";
+import { useIndexListener, useTouchListener } from "@/components/useListener";
 
 export default function Home() {
   const [currentPageId, setCurrentPageId] = useState<number>(1);
   const [initialScrollDown, setInitialScrollDown] = useState<boolean>(false);
 
   useEffect(() => {
-    useIndexListener({
-      currentPageId,
-      setCurrentPageId,
-      setInitialScrollDown,
-    });
+    if (window.innerWidth > 800) {
+      useIndexListener({
+        currentPageId,
+        setCurrentPageId,
+        setInitialScrollDown,
+      });
+    } else {
+      useTouchListener({
+        currentPageId,
+        setCurrentPageId,
+        setInitialScrollDown,
+      });
+    }
   });
 
   return (

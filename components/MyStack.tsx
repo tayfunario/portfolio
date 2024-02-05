@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import StackItem from "./StackItem";
 import { useEffect, useState } from "react";
-import { usePageListener } from "./useListener";
+import { usePageListener, useTouchPageListener } from "./useListener";
 
 const stackContainerVariants = {
   hidden: {},
@@ -19,7 +19,11 @@ export default function MyStack({
   let lock: boolean = false;
 
   useEffect(() => {
-    usePageListener({ lock, callback: setScrollDown });
+    if (window.innerWidth > 800) {
+      usePageListener({ lock, callback: setScrollDown });
+    } else {
+      useTouchPageListener({ lock, callback: setScrollDown });
+    }
   }, []);
 
   return (

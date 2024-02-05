@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePageListener } from "./useListener";
+import { usePageListener, useTouchPageListener } from "./useListener";
 
 const stackContainerVariants = {
   hidden: {},
@@ -21,7 +21,11 @@ export default function Projects({
   let lock: boolean = false;
 
   useEffect(() => {
-    usePageListener({ lock, callback: setScrollDown });
+    if (window.innerWidth > 800) {
+      usePageListener({ lock, callback: setScrollDown });
+    } else {
+      useTouchPageListener({ lock, callback: setScrollDown });
+    }
   }, []);
 
   return (
