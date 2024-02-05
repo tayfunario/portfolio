@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [currentPageId, setCurrentPageId] = useState<number>(1);
+  const [currentPageId, setCurrentPageId] = useState<number>(2);
   const [isLocked, setIsLocked] = useState<boolean>(false);
   const [initialScrollDown, setInitialScrollDown] = useState<boolean>(false);
 
