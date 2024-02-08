@@ -66,3 +66,7 @@ body {
 .stack-ul-li {
   @apply text-cyan-800 bg-cyan-100 px-2 py-1 rounded-lg text-sm font-semibold;
 }
+
+#down-icon {
+  filter: drop-shadow(0px 2px 3px darkblue);
+}

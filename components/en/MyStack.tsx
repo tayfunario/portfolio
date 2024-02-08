@@ -32,7 +32,7 @@ export default function MyStack({
       animate={{ y: "0vh" }}
       exit={{ y: scrollDown ? "-100vh" : "100vh" }}
       transition={{ duration: 1 }}
-      className="h-screen flex flex-col pt-2"
+      className="h-svh flex flex-col pt-2"
     >
       <motion.div
         initial={{ y: "-3vh" }}

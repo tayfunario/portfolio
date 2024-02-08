@@ -30,7 +30,7 @@ export default function Contact() {
       exit="exit"
       transition={{ duration: 1 }}
       onAnimationComplete={() => setAnimateValue("visible")}
-      className="grid content-center h-screen"
+      className="grid content-center h-svh"
     >
       <SectionTitle title="İletişim" />
 
