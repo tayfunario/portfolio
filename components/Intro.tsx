@@ -53,7 +53,7 @@ export default function Intro() {
       exit={{ y: "-100vh" }}
       transition={{ duration: 1 }}
       onAnimationComplete={() => setAnimateValue("visible")}
-      className="w-full grid grid-cols-3 grid-rows-2 gap-3 h-screen pb-12"
+      className="w-full grid grid-cols-3 grid-rows-2 gap-3 h-svh pb-12"
     >
       <LanguageSwitch initialLanguage="tr" />
 
