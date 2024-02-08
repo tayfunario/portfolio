@@ -19,29 +19,6 @@ export function usePageListener({
   });
 }
 
-// use in index page
-export function useIndexListener({
-  currentPageId,
-  setCurrentPageId,
-  setInitialScrollDown,
-}: {
-  currentPageId: number;
-  setCurrentPageId: (val: number) => void;
-  setInitialScrollDown: (val: boolean) => void;
-}) {
-  document.addEventListener("wheel", (e: WheelEvent) => {
-    if (!(e.target as HTMLElement).closest("#stack-container")) {
-      if (e.deltaY > 0 && currentPageId < 4) {
-        setCurrentPageId(currentPageId + 1);
-        setInitialScrollDown(true);
-      } else if (e.deltaY < 0 && currentPageId > 1) {
-        setCurrentPageId(currentPageId - 1);
-        setInitialScrollDown(false);
-      }
-    }
-  });
-}
-
 export function useTouchListener({
   currentPageId,
   setCurrentPageId,
