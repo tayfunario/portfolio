@@ -49,7 +49,7 @@ export default function Index() {
             title="Features"
             list={[
               "Drag-and-Drop",
-              "Specializing the profile",
+              "Customizing the profile",
               "Transaction alerts",
               "Copying the link to the clipboard",
               "Form validations",
