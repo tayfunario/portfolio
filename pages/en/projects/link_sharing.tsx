@@ -49,7 +49,6 @@ export default function Index() {
             title="Features"
             list={[
               "Drag-and-Drop",
-              "Profili özelleştirme",
               "Specializing the profile",
               "Transaction alerts",
               "Copying the link to the clipboard",
