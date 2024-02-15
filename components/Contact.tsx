@@ -53,7 +53,7 @@ export default function Contact() {
 
         <motion.a
           variants={itemVariants}
-          href="https://www.linkedin.com/in/tayfun-kahraman-37b4861b0/"
+          href="https://www.linkedin.com/in/tayfun-emre-kahraman-37b4861b0/"
           target="_blank"
           className="flex justify-center items-center gap-x-1 mb-2"
         >
@@ -63,7 +63,7 @@ export default function Contact() {
         
         <motion.a
           variants={itemVariants}
-          href="https://github.com/tayfunetta?tab=repositories"
+          href="https://github.com/tayfunario?tab=repositories"
           target="_blank"
           className="flex justify-center items-center gap-x-1 mb-4"
         >
