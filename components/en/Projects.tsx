@@ -79,7 +79,7 @@ export default function Projects({
         />
 
         <Link
-          href="https://github.com/tayfunetta?tab=repositories"
+          href="https://github.com/tayfunario?tab=repositories"
           target="_blank"
           className="flex justify-center items-center gap-x-3 w-44 mx-auto py-2 bg-black bg-opacity-45 opacity-70 text-xs text-white font-semibold rounded-2xl"
         >
