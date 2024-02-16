@@ -84,8 +84,8 @@ export default function IntroText({
                   <FaExclamationTriangle className="text-sky-500 size-16" />
                   <p className="text-xs  text-sky-600">
                     If the page does not open via the link, please reset and
-                    wait until the page opens. It may be due to an issue with
-                    Vercel.
+                    wait until the page opens. It will be absolutely open. This
+                    may be due to an issue with Vercel.
                   </p>
                 </div>
                 <Link

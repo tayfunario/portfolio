@@ -46,7 +46,9 @@ export default function IntroText({
 
       {secondParagraph && <p className="text-sm">{secondParagraph}</p>}
 
-      <h4 className="font-black mt-3 mb-1 underline underline-offset-2">Stack</h4>
+      <h4 className="font-black mt-3 mb-1 underline underline-offset-2">
+        Stack
+      </h4>
 
       <ul className="flex flex-wrap gap-x-3 gap-y-2">
         {stackList.map((stack, index) => (
@@ -82,7 +84,8 @@ export default function IntroText({
                   <FaExclamationTriangle className="text-sky-500 size-16" />
                   <p className="text-xs  text-sky-600">
                     Eğer linkteki sayfa açılmazsa sayfa açılana kadar reset atıp
-                    bekleyin. Vercel kaynaklı bir sorun oluşabilir.
+                    bekleyin. Mutlaka açılacaktır.Vercel kaynaklı bir sorun
+                    oluşabilir.
                   </p>
                 </div>
                 <Link
