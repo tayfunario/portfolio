@@ -34,7 +34,7 @@ export default function Index() {
             secondParagraph="Tekrar kullanılabilir komponentler ve stiller kullanarak geliştirme
             sürecini hızlandırdım ve kod bakımını kolaylaştırdım. Mobile-first
             yaklaşım kullanmam da arayüzü responsive hale getirmeyi hızlandırdı.
-            Cypress kullanarak da E2E testleri yaptım."
+            Cypress kullanarak da E2E testleri yaptım. MVC pattern'ini kullanarak da back-end'i organize ettim."
             stackList={[
               "Nextjs",
               "TypeScript",

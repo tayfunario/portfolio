@@ -26,7 +26,7 @@ export default function Index() {
           <SectionTitle title="Introduction" />
           <IntroText
             firstParagraph="Product Feedback App; I developed a Next.js web application for providing feedback on a product, interpreting and voting on received feedback. I obtained the design file from a different source and wrote the project entirely from scratch. I uploaded the database and backend code to a Cloud service. As for the frontend part, I deployed it on Vercel"
-            secondParagraph="I accelerated the development process and simplified code maintenance by using reusable components and styles. Employing a mobile-first approach also expedited making the interface responsive. Additionally, I conducted end-to-end tests using Cypress."
+            secondParagraph="I accelerated the development process and simplified code maintenance by using reusable components and styles. Employing a mobile-first approach also expedited making the interface responsive. Additionally, I conducted end-to-end tests using Cypress and organized the backend using the MVC pattern."
             stackList={[
               "Nextjs",
               "TypeScript",
