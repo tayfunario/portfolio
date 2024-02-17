@@ -37,7 +37,7 @@ export default function Index() {
               "Semantik HTML",
               "Swiper.js",
             ]}
-            link="https://tayfunetta.github.io/ai-grostore/"
+            link="https://tayfunario.github.io/ai-grostore/"
             sourceLink="https://github.com/tayfunetta/ai-grostore"
           />
         </main>
