@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         transition={{ duration: 0.4 }}
       >
         <Head>
+          <link rel="icon" href="/favicon.ico" />
           <title>Tayfun Emre Kahraman</title>
         </Head>
         <Component {...pageProps} />
