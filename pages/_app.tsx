@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -23,6 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
         transition={{ duration: 0.4 }}
       >
+        <Head>
+          <title>Tayfun Emre Kahraman</title>
+        </Head>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
