@@ -83,9 +83,9 @@ export default function IntroText({
                 <div className="flex items-center gap-x-4 px-1">
                   <FaExclamationTriangle className="text-sky-500 size-16" />
                   <p className="text-xs  text-sky-600">
-                    Eğer linkteki sayfa açılmazsa sayfa açılana kadar reset atıp
-                    bekleyin. Mutlaka açılacaktır.Vercel kaynaklı bir sorun
-                    oluşabilir.
+                    Serverless cold-start durumu dolayısıyla siteye ilk girişte
+                    sayfa yüklenmeyebilir. Site yüklenene kadar reset atın
+                    mutlaka açılacaktır.
                   </p>
                 </div>
                 <Link
