@@ -83,7 +83,7 @@ export default function IntroText({
                 <div className="flex items-center gap-x-4 px-1">
                   <FaExclamationTriangle className="text-sky-500 size-16" />
                   <p className="text-xs  text-sky-600">
-                    Serverless cold-start durumu dolayısıyla siteye ilk girişte
+                    Serverless cold-start dolayısıyla siteye ilk girişte
                     sayfa yüklenmeyebilir. Site yüklenene kadar reset atın
                     mutlaka açılacaktır.
                   </p>

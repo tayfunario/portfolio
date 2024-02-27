@@ -83,9 +83,9 @@ export default function IntroText({
                 <div className="flex items-center gap-x-4 px-1">
                   <FaExclamationTriangle className="text-sky-500 size-16" />
                   <p className="text-xs  text-sky-600">
-                    Serverless cold-start status may cause the site to not load
-                    on the first entry. It will definitely open when the site is
-                    loaded.
+                    Serverless cold-start may cause the site to not load on the
+                    first entry. Keep refreshing. It will definitely open when
+                    the site is loaded.
                   </p>
                 </div>
                 <Link
