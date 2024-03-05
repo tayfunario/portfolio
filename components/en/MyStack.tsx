@@ -120,6 +120,13 @@ export default function MyStack({
           currentlyBeingLearned={false}
         />
         <StackItem
+          id={17}
+          name="Jest"
+          src="jest"
+          alt="jest"
+          currentlyBeingLearned={false}
+        />
+        <StackItem
           id={8}
           name="Cypress"
           src="cypress"
@@ -166,7 +173,7 @@ export default function MyStack({
           name="GraphQL"
           src="graphql"
           alt="graphql"
-          currentlyBeingLearned={true}
+          currentlyBeingLearned={false}
         />
         <StackItem
           id={15}
