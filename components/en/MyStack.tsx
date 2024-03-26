@@ -134,6 +134,13 @@ export default function MyStack({
           currentlyBeingLearned={false}
         />
         <StackItem
+          id={15}
+          name="Docker"
+          src="docker"
+          alt="docker"
+          currentlyBeingLearned={false}
+        />
+        <StackItem
           id={9}
           name="Node.js"
           src="nodejs"
@@ -176,18 +183,11 @@ export default function MyStack({
           currentlyBeingLearned={false}
         />
         <StackItem
-          id={15}
-          name="Nest.js"
-          src="nestjs"
-          alt="nest.js"
-          currentlyBeingLearned={true}
-        />
-        <StackItem
           id={16}
           name="Design Patterns"
           src="pattern"
           alt="design patterns"
-          currentlyBeingLearned={true}
+          currentlyBeingLearned={false}
         />
       </motion.div>
     </motion.section>
